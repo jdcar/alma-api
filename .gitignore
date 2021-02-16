@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 config.py
 test-10.csv
+
 # C extensions
 *.so
 

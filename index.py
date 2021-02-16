@@ -18,8 +18,10 @@ with open(r"test-10.csv", newline='') as csvfile:
 
         apiKey = config.api_key
 
-        response = requests.get(queryURL + mmsid + "?apikey=" + apiKey )
+        response = requests.get(queryURL + mmsid + "?apikey=" + apiKey +  "&format=json")
 
-        soup = BeautifulSoup(response.content, 'html.parser')
+        print(response.content)
 
-        print(soup.record)
+        # soup = BeautifulSoup(response.content, 'html.parser')
+        #
+        # print(soup.record)
